@@ -1,4 +1,4 @@
-package com.example.portaldaneshjo.Adapter;
+package com.example.portaldaneshjo.Adapters.ListViewAdapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

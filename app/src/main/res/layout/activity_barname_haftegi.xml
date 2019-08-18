@@ -30,92 +30,107 @@
         android:layout_height="match_parent"
         android:layout_below="@id/spn_nimsaltahsili_barnamehaftegi_id"
         android:layout_marginTop="21dp">
-
-        <TableRow
-            android:id="@+id/table_row_barname_haftegi"
+        <TableLayout
+            android:id="@+id/table_layout_id"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="horizontal"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="نام درس"
-                android:layout_marginRight="12dp"
-                android:textAlignment="center"
-                android:textColor="@color/black_color"
-                android:textStyle="bold" />
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/margin_10dp"
+            android:background="@drawable/back_1">
 
-            <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="نام استاد"
-                android:layout_marginRight="12dp"
-                android:textAlignment="center"
-            android:textColor="@color/black_color"
-            android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingRight="8dp"
-                android:text="عملی\nتعداد واحد"
-                android:textAlignment="center"
-                android:textColor="@color/black_color"
-                android:layout_marginRight="12dp"
-
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:text="نظری\nتعداد واحد"
-                android:textAlignment="center"
-                android:textColor="@color/black_color"
-                android:layout_marginRight="12dp"
-
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
+            <TableRow
+                android:id="@+id/table_row_barname_haftegi"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="جنسیت"
-                android:layout_marginRight="12dp"
+                android:scrollbars="horizontal">
 
-                android:textAlignment="center"
-                android:textColor="@color/black_color"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/course_name"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ساعت\nامتحان"
-                android:paddingRight="8dp"
-                android:textAlignment="center"
-                android:textColor="@color/black_color"
-                android:layout_marginRight="12dp"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/teacher_name"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="65dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="9dp"
-                android:text="شماره و\nساعت کلاس"
-                android:textAlignment="center"
-                android:textColor="@color/black_color"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:paddingRight="8dp"
+                    android:text="عملی\nتعداد واحد"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:paddingLeft="2dp"
-                android:text="تاریخ\nامتحان"
-                android:textAlignment="center"
-                android:textColor="@color/black_color"
-                android:textStyle="bold"
-                android:layout_marginLeft="14dp"
+                    android:textStyle="bold" />
 
-                />
-        </TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="12dp"
+                    android:text="نظری\nتعداد واحد"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="12dp"
+                    android:text="جنسیت"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:paddingRight="8dp"
+                    android:text="ساعت\nامتحان"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:text="شماره و\nساعت کلاس"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="14dp"
+                    android:paddingLeft="2dp"
+                    android:text="تاریخ\nامتحان"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
+            </TableRow>
+         <ListView
+             android:id="@+id/listView_barname_haftegi"
+             android:layout_width="match_parent"
+             android:layout_height="400dp"
+             android:dividerHeight="20dp"
+             >
+
+
+         </ListView>
+        </TableLayout>>
     </ScrollView>
 </RelativeLayout>

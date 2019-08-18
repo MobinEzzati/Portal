@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.widget.GridView;
 
-import com.example.portaldaneshjo.Adapter.FragmentsGridViewAdapters.GridViewAdapter_Mali;
+import com.example.portaldaneshjo.Adapters.FragmentsGridViewAdapters.GridViewAdapter_Mali;
 import com.example.portaldaneshjo.R;
 import com.labo.kaji.fragmentanimations.CubeAnimation;
 

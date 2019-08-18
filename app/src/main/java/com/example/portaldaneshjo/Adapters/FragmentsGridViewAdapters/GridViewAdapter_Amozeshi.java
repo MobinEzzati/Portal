@@ -1,4 +1,4 @@
-package com.example.portaldaneshjo.Adapter.FragmentsGridViewAdapters;
+package com.example.portaldaneshjo.Adapters.FragmentsGridViewAdapters;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,25 +9,23 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.example.portaldaneshjo.Activity.Darkhast_daneshjoii_activities.Eshteghal;
-import com.example.portaldaneshjo.Activity.Darkhast_daneshjoii_activities.Ghaza;
-import com.example.portaldaneshjo.Activity.Darkhast_daneshjoii_activities.Khabgah;
-import com.example.portaldaneshjo.Activity.Darkhast_daneshjoii_activities.Morakhasi;
-import com.example.portaldaneshjo.Activity.Darkhast_daneshjoii_activities.Parking;
-import com.example.portaldaneshjo.Activity.Darkhast_daneshjoii_activities.Vam;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.BarnameHaftegi;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.EterazNomre;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.Karname;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.KartEmtehan;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.ListDoros;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.ZamanBandi;
 import com.example.portaldaneshjo.R;
 
-public class GridViewAdapter_Darkhast extends BaseAdapter {
-
+public class GridViewAdapter_Amozeshi extends BaseAdapter {
     private Context context;
     private String[] nameitems;
-    private Integer[] picname;
+    private Integer[] picitems;
 
-    public GridViewAdapter_Darkhast(Context context, String[] nameitems, Integer[] picname) {
+    public GridViewAdapter_Amozeshi(Context context, String[] nameitems, Integer[] picitems) {
         this.context = context;
         this.nameitems = nameitems;
-        this.picname = picname;
+        this.picitems = picitems;
     }
 
     @Override
@@ -60,37 +58,37 @@ public class GridViewAdapter_Darkhast extends BaseAdapter {
         holder.imageView = (ImageView) view.findViewById(R.id.img_items_id);
         holder.textView = (TextView) view.findViewById(R.id.txt_items_id);
 
-        holder.imageView.setImageResource(picname[position]);
+        holder.imageView.setImageResource(picitems[position]);
         holder.textView.setText(nameitems[position]);
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (nameitems[position]){
-                    case "درخواست خوابگاه":{
-                        v.getContext().startActivity(new Intent(context, Khabgah.class));
+                    case "برنامه هفتگی":{
+                        v.getContext().startActivity(new Intent(context, BarnameHaftegi.class));
                         a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
-                    case "پارکینگ":{
-                        v.getContext().startActivity(new Intent(context, Parking.class));
+
+                    case "اعتراض نمرات":{
+                        v.getContext().startActivity(new Intent(context, EterazNomre.class));
                         a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
-                    case "رزرو غذا":{
-                        v.getContext().startActivity(new Intent(context, Ghaza.class));
+                    case "کارنامه":{
+                        v.getContext().startActivity(new Intent(context, Karname.class));
                         a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
-                    case "درخواست وام":{
-                        v.getContext().startActivity(new Intent(context, Vam.class));
+                    case "لیست دروس":{
+                        v.getContext().startActivity(new Intent(context, ListDoros.class));
                         a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
-                    case "گواهی اشتغال":{
-                        v.getContext().startActivity(new Intent(context, Eshteghal.class));
+                    case "زمان بندی ثبت نام":{
+                        v.getContext().startActivity(new Intent(context, ZamanBandi.class));
                         a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
-                    case "مرخصی تحصیلی":{
-                        v.getContext().startActivity(new Intent(context, Morakhasi.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);
-                        break;
+                    case "کارت امتحان":{
+                        v.getContext().startActivity(new Intent(context, KartEmtehan.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                 }
             }

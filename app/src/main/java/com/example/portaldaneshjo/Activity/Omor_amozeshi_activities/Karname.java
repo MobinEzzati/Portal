@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 
-import com.example.portaldaneshjo.Adapter.SpinnerAdapter_Nimsal;
+import com.example.portaldaneshjo.Adapters.SpinnerAdapter_Nimsal;
 import com.example.portaldaneshjo.Model.Nimsaltahsili;
 import com.example.portaldaneshjo.R;
 

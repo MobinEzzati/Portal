@@ -1,4 +1,4 @@
-package com.example.portaldaneshjo.Adapter;
+package com.example.portaldaneshjo.Adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

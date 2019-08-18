@@ -1,4 +1,4 @@
-package com.example.portaldaneshjo.Adapter.FragmentsGridViewAdapters;
+package com.example.portaldaneshjo.Adapters.FragmentsGridViewAdapters;
 
 import android.app.Activity;
 import android.content.Context;

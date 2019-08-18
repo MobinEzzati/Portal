@@ -132,4 +132,6 @@
     <string name="ss">ثبت درس</string>
     <string name="vahed0">واحد</string>
     <string name="datsname">نام درس</string>
+    <string name="course_name">نام درس</string>
+    <string name="teacher_name">نام استاد</string>
 </resources>
